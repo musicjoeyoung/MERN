@@ -1,0 +1,71 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+html {
+  font-family: "Raleway", sans-serif;
+  background-color: aliceblue;
+}
+.App {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 15px auto;
+  box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+  font-family: "Raleway", sans-serif;
+}
+input {
+  font-family: "Raleway", sans-serif;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:nth-child(even) {
+  background: #ccc;
+}
+tr:nth-child(odd) {
+  background: #fff;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 50%;
+  margin: 0 auto;
+}
+.labels label {
+  width: auto;
+  margin: 4px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.addUserBtn {
+  border-radius: 16px;
+  height: 40px;
+  width: 115px;
+  margin-top: 15px;
+  font-family: "Raleway", sans-serif;
+}
+i {
+  position: absolute;
+  right: 3%;
+  margin-top: 2px;
+  color: gray;
+}
+.header {
+  border: 1px solid;
+  width: 95%;
+  margin: 10px auto;
+}
