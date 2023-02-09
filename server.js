@@ -1,5 +1,5 @@
 const express = require("express");
-const dotenv = require("dotenv");
+const dotenv = require("dotenv"); //manages configuration info (DB credentials, API keys, & other sensitive info that shouldn't be stored in code)
 const connectDB = require("./config/db");
 const logger = require("./utils/logger");
 const user = require("./routes/user");
