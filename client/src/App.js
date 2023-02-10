@@ -17,7 +17,8 @@ const App = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await axios.get("http://localhost:5001/user");
+      /* const res = await axios.get("http://localhost:5001/user"); */
+      const res = await axios.get("https://mern.adaptable.app/user");
       setUsers(res.data);
     }
     fetchData();
@@ -47,7 +48,7 @@ const App = () => {
     /*******/
 
     try {
-      await axios.post("http://localhost:5001/user", newUser);
+      await axios.post("https://mern.adaptable.app/user", newUser);
       setUsers([...users, newUser]);
       console.log("Successfully added a new user!");
       alert("Thanks for the entry!");
@@ -72,8 +73,8 @@ const App = () => {
 
   const handleDelete = async (id) => {
     console.log("delete: ", id);
-    console.log("delete URL: ", `http://localhost:5001/user/${id}`);
-    await axios.delete(`http://localhost:5001/user/${id}`);
+    console.log("delete URL: ", `https://mern.adaptable.app/user/${id}`);
+    await axios.delete(`https://mern.adaptable.app/user/${id}`);
     setUsers(users.filter((user) => user._id !== id));
   };
 
