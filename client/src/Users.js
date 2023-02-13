@@ -21,7 +21,7 @@ const Users = ({ users, handleDelete }) => {
   });
   //console.log(users);
   return (
-    <div>
+    <div className="usersContainer">
       <h1>Users</h1>
       <div>
         <label htmlFor="sort-by">Sort by:</label>
@@ -33,7 +33,7 @@ const Users = ({ users, handleDelete }) => {
         </select>
         <table>
           <tbody>
-            <tr>
+            <tr className="columnTitles">
               <th>username</th>
               <th>first Name</th>
               <th>last Name</th>
