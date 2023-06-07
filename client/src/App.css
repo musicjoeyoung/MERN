@@ -28,6 +28,10 @@ th {
   padding: 8px;
 }
 
+tr:hover {
+  background-color: #03a9f4 !important;
+}
+
 tr:nth-child(even) {
   background-color: #dddddd;
 }
